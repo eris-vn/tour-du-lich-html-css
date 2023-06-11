@@ -1,0 +1,82 @@
+.login-page {
+    /* min-height: 440px; */
+    background-color: #f7f7f7;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.login-page .l-form {
+    background-color: white;
+    padding: 28px 30px;
+    width: 400px;
+    max-width: calc(100% - 60px);
+    margin: 0 auto;
+    border: 1px solid #dddfe2;
+}
+
+.l-form>.title {
+    text-align: center;
+    font-size: 26px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.l-form>.title::after {
+    bottom: -3px;
+    content: '';
+    height: 2px;
+    width: 50px;
+    right: calc(50% - 25px);
+    display: block;
+    position: absolute;
+    background-color: black;
+}
+
+.l-form>input {
+    width: calc(100% - 20px);
+    outline: 0;
+    padding: 10px;
+    border-radius: 0px;
+    border: 1px solid gray;
+    margin-bottom: 15px;
+}
+
+.l-form>.btn-login {
+    background-color: var(--blue);
+    color: white;
+    padding: 13px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.l-form>.or {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.login-page .social-login {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.login-page .social-login>div {
+    border: 1px solid gray;
+    width: 100%;
+    text-align: center;
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.l-form .msg {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.l-form .msg a {
+    color: var(--blue);
+}

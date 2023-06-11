@@ -1,0 +1,80 @@
+.footer {
+    padding-top: 20px;
+    /* height: 300px; */
+    padding-bottom: 30px;
+    border-top: 1px solid #eee;
+    /* background-color: #f7f7f7; */
+}
+
+.footer .title {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 5px;
+}
+
+.footer img {
+    cursor: pointer;
+}
+
+.footer .f-content {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer .content {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.footer .form {
+    margin-top: 20px;
+}
+
+.footer .promotion {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.footer .promotion input {
+    outline: 0;
+    padding: 10px 15px;
+    border: 1px solid var(--gray);
+    border-radius: 0px;
+}
+
+.promotion .reg-btn {
+    cursor: pointer;
+    line-height: 37px;
+    background-color: var(--blue);
+    padding: 0px 20px;
+    color: white;
+    border-radius: 2px;
+}
+
+.theme-picker {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.theme-picker>div {
+    height: 16px;
+    width: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.theme-picker>.blue {
+    background-color: #0075f5;
+}
+
+.theme-picker>.orange {
+    background-color: #f5bd00;
+}
+
+.theme-picker>.green {
+    background-color: #00e97c;
+}

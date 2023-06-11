@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DU LỊCH VIỆT</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/app.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="loading-screen ">
+        <div class="screen-wrapper">
+            <div class="loader"></div>
+            <div>Đang tải, chờ chút nha ...</div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="container flex justify-between">
+            <a href="/"><img src="/assets/img/logo.svg" alt="Logo" /></a>
+            <div class="h-content flex content-center gap-10 is-pc">
+                <div>
+                    <i class="text-blue fa-regular fa-rectangle-list"></i>
+                    ĐẶT CHỔ CỦA TÔI
+                </div>
+                <div>
+                    <i class="text-blue fa-regular fa-circle-question"></i> TRỢ GIÚP
+                </div>
+                <div><a href="/dang-ky.html">ĐĂNG KÝ</a></div>
+                <div class="btn-login"><a href="/dang-nhap.html">ĐĂNG NHẬP</a></div>
+            </div>
+            <div class="is-mobile">
+                <i class="fa-solid fa-bars mobile-bar" onclick="openSidebar()"></i>
+            </div>
+        </div>
+    </div>
+    <div class="sub-header">
+        <div class="container flex gap-10">
+            <div>
+                <i class="text-blue fa-solid fa-location-dot"></i>
+                <a href="#find-location">Nơi bạn muốn đến</a>
+            </div>
+            <div><a href="#local-tour">Tour trong nước</a></div>
+            <div>Tour ngoài nước</div>
+            <div>Dánh giá</div>
+        </div>
+    </div>
+
+    <!-- BANNER -->
+    <div class="banner" id="find-location">
+
+        <div class="swiper" id="main-banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_90/c_fill,,w_2560,/v1670577678/banner/tvhfgpkiapfldzoaj8ll.webp"
+                        alt>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_90/c_fill,,w_2560,/v1670577664/banner/rtw7fgqatgoc1vpcpamb.webp"
+                        alt>
+                </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="banner-btn-prev">
+                <div>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+            </div>
+            <div class="banner-btn-next">
+                <div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search-form">
+            <div class="title">Nhập địa điểm bạn muốn đến </div>
+            <div class="search-wrapper">
+                <div class="input">
+                    <i class="fa-solid fa-map"></i>
+                    <input type="text" placeholder="Bạn muốn đi đâu?">
+                </div>
+                <div class="search-btn">TÌM KIẾM</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HOT -->
+    <div class="sub-banner">
+        <div class="container">
+            <div class="title">ƯU ĐÃI HOT</div>
+            <div class="swiper" id="sub-banner">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="img-wrapper">
+                            <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,,w_800,h_342/v1682587950/banner/p6ve75d6mgyllrsgcck5.webp"
+                                alt>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-wrapper">
+                            <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,,w_800,h_342/v1679399535/banner/hgm7bjmlhtkqcr689t7q.webp"
+                                alt>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-wrapper">
+                            <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,,w_800,h_342/v1675744515/banner/v3tvxwvi3tyezmtmknjo.webp"
+                                alt>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-wrapper">
+                            <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,,w_800,h_342/v1676885224/banner/iyxdo6vmycyyplpdwyke.webp"
+                                alt>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-wrapper">
+                            <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,,w_800,h_342/v1684129693/banner/mor0ypngltv1ivayoxbn.webp"
+                                alt>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="sub-banner-btn-prev">
+                    <div>
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                </div>
+                <div class="sub-banner-btn-next">
+                    <div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOUR TRONG NƯỚC -->
+    <div class="local-tour" id="local-tour">
+        <div class="container">
+            <div class="flex justify-between">
+                <div class="title">DU LỊCH TRONG NƯỚC</div>
+            </div>
+            <div class="tour-wrapper" id="local-tour-list">
+                <div class="tour">
+                    Đang tải dữ liệu...
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="btn-view-all">XEM TẤT CẢ</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ĐỐI TÁC -->
+    <div class="partner">
+        <div class="container">
+            <div class="title">ĐỐI TÁC DOANH NGHIỆP</div>
+            <div class="swiper" id="swiper-partner">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="img-wrapper">
+                            <img src="/assets/img/partner/1.png" alt>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-wrapper">
+                            <img src="/assets/img/partner/2.png" alt>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-wrapper">
+                            <img src="/assets/img/partner/3.png" alt>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-wrapper">
+                            <img src="/assets/img/partner/4.png" alt>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-wrapper">
+                            <img src="/assets/img/partner/5.png" alt>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-wrapper">
+                            <img src="/assets/img/partner/6.png" alt>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-wrapper">
+                            <img src="/assets/img/partner/7.png" alt>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-wrapper">
+                            <img src="/assets/img/partner/8.png" alt>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-wrapper">
+                            <img src="/assets/img/partner/9.png" alt>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-wrapper">
+                            <img src="/assets/img/partner/10.png" alt>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOUR NƯỚC NGOÀI -->
+    <div class="local-tour international_tour" id="international-tour">
+        <div class="container">
+            <div class="flex justify-between">
+                <div class="title">DU LỊCH NƯỚC NGOÀI</div>
+            </div>
+            <div class="tour-wrapper" id="international-tour-list">
+                <div class="tour">
+                    Đang tải dữ liệu...
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="btn-view-all">XEM TẤT CẢ</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- TIN TỨC -->
+    <div class="news">
+        <div class="container">
+            <div class="title">
+                TIN TỨC
+            </div>
+            <div class="news-container">
+                <div class="item1">
+                    <img src="https://booking.pystravel.vn/uploads/posts/avatar/1685763851.jpg" alt="">
+                    <div class="content">
+                        <div class="title">
+                            FLC Sầm Sơn - Thiên đường nghỉ dưỡng tại Thanh Hóa
+                        </div>
+                        <div class="date">
+                            <i class="fa-solid fa-calendar-days"></i> 10:44 03/06/2023
+                        </div>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="posts">
+                        <img src="https://booking.pystravel.vn/uploads/posts/avatar/1685681534.jpg" alt="">
+                        <div>
+                            <div class="title">
+                                Theo Báo Người Lao Động: Du lịch Việt Nam chờ cú hích từ khách Ấn Độ
+                            </div>
+                            <div class="date">
+                                <i class="fa-solid fa-calendar-days"></i> 11:52 02/06/2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item3">
+                    <div class="posts">
+                        <img src="https://booking.pystravel.vn/wp-content/uploads/2015/03/11150737_831491943611433_3250658027393591907_n.jpg"
+                            alt="">
+                        <div>
+                            <div class="title">
+                                Văn hoá doanh nghiệp
+                            </div>
+                            <div class="date">
+                                <i class="fa-solid fa-calendar-days"></i> 11:52 02/06/2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item4">
+                    <div class="posts">
+                        <img src="https://booking.pystravel.vn/uploads/posts/avatar/1683695747.JPG" alt="">
+                        <div>
+                            <div class="title">
+                                Kỷ niệm tròn 13 năm của PYS với chủ đề "Bắc Trung Nam hội tụ"
+                            </div>
+                            <div class="date">
+                                <i class="fa-solid fa-calendar-days"></i> 11:52 02/06/2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item5">
+                    <div class="posts">
+                        <img src="https://booking.pystravel.vn/uploads/posts/avatar/1679724226.jpg" alt="">
+                        <div>
+                            <div class="title">
+                                Nhiều cơ quan Báo chí cùng đưa tin PYS Travel tổ chức thành công Famtrip 2023
+                            </div>
+                            <div class="date">
+                                <i class="fa-solid fa-calendar-days"></i> 08:03 25/03/2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GALLERY -->
+    <div class="gallery">
+        <div class="container">
+            <div class="title">
+                THƯ VIỆN ẢNH KHÁCH HÀNG
+            </div>
+            <div class="gallery-container">
+                <div class="col-3">
+                    <div class="img-wrapper">
+                        <img src="https://imagescdn.pystravel.vn/uploads/posts/albums/6/dadc7c6fcb1f34b8a3f0c356f63244cd.PNG"
+                            alt="">
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="https://imagescdn.pystravel.vn/uploads/posts/avatar/1650356088.jpg" alt="">
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="https://imagescdn.pystravel.vn/uploads/posts/avatar/1551156268.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="img-wrapper">
+                        <img src="https://imagescdn.pystravel.vn/uploads/posts/avatar/1551932705.jpg" alt="">
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="https://booking.pystravel.vn/uploads/posts/albums/6/40d44a95a32297e2f1d07ddec4f2672d.jpg"
+                            alt="">
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="https://booking.pystravel.vn/uploads/posts/albums/6/6c356e4d658d791fc0902f12fc12ac0f.jpg"
+                            alt="">
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="https://booking.pystravel.vn/uploads/posts/albums/6/e26cf37f726944a66917e002b7b55721.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="img-wrapper">
+                        <img src="https://booking.pystravel.vn/uploads/posts/albums/6/e26cf37f726944a66917e002b7b55721.jpg"
+                            alt="">
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="https://booking.pystravel.vn/uploads/posts/albums/6/44e24760360f60976a818eed60375b44.jpg"
+                            alt="">
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="https://booking.pystravel.vn/uploads/posts/albums/6/db0c482b05a8e33b4adff14af8ac0f7c.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="img-wrapper">
+                        <img src="https://booking.pystravel.vn/uploads/posts/albums/6/4fdcdb6531061c910bfed54a85ae2ee1.JPG"
+                            alt="">
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="https://booking.pystravel.vn/uploads/posts/albums/6/dc566d6b989bb12c2c5c5fb62964bc98.jpg"
+                            alt="">
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="https://booking.pystravel.vn/uploads/posts/albums/6/6d4e8373014e8ce59bc8c3840f11d8b5.jpg"
+                            alt="">
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="https://booking.pystravel.vn/uploads/posts/albums/6/bcce470d578a5624cc509011ee2b1b98.jpg"
+                            alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="review">
+        <div class="container">
+            <div class="title">ĐÁNH GIÁ TỪ KHÁCH HÀNG</div>
+            <div class="swiper" id="review">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="customer">
+                            <div class="c-header">
+                                <img class="avatar"
+                                    src="https://booking.pystravel.vn/uploads/posts/avatar/1675909602.jpg" alt="">
+                                <div>
+                                    <div>Minh Quân</div>
+                                    <div class="star-list">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div>Chất lượng dịch vụ tốt, sẽ sử dụng lại vào mùa hè năm sau</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="customer">
+                            <div class="c-header">
+                                <img class="avatar"
+                                    src="https://booking.pystravel.vn/uploads/posts/avatar/1676686519.jpg" alt="">
+                                <div>
+                                    <div>Võ Kim Oanh</div>
+                                    <div class="star-list">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div>Trãi nhiệm tuyệt vời của mình tại malaysia cùng với traveloka, rất hài lòng.</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="customer">
+                            <div class="c-header">
+                                <img class="avatar"
+                                    src="https://booking.pystravel.vn/uploads/posts/avatar/1675130280.jpg" alt="">
+                                <div>
+                                    <div>Tiêu Phương Ngọc</div>
+                                    <div class="star-list">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div>Mình đi nhóm 10 người, giá khá hợp lý, nhân viên tận tâm chấm dịch vụ 10đ luôn.</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="customer">
+                            <div class="c-header">
+                                <img class="avatar"
+                                    src="https://booking.pystravel.vn/uploads/posts/avatar/1675398325.jpg" alt="">
+                                <div>
+                                    <div>Nguyễn Thu Giang</div>
+                                    <div class="star-list">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div>Cảm ơn traveloka đã mang trạng trãi nghiệm mới mẽ tại hà giang.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container ">
+            <div class="f-content">
+                <div>
+                    <div class="title">
+                        VỀ CHÚNG TÔI
+                    </div>
+                    <div class="content">
+                        Chúng tôi là một doanh nghiệp đặt tour du lịch uy tín với hơn 10 năm kinh nghiệm, mang đến những
+                        hành trình đáng nhớ và chất lượng hàng đầu.
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i> 0909886688
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-house"></i> Số 5, Lô 1C, Trung Yên 11C, Hà Nội
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-envelope"></i> info@domain.com
+                    </div>
+                </div>
+                <div>
+                    <div class="title">
+                        BẢN ĐỒ
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3127470222767!2d106.68035468531501!3d10.787341431579426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4cad8d5321%3A0xbf890179e4784517!2sTRAVELOKA%20VIETNAM!5e0!3m2!1svi!2s!4v1686242124443!5m2!1svi!2s"
+                        width="100%" height="130" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <div class="title">
+                        KẾT NỐI VỚI CHÚNG TÔI
+                    </div>
+                    <div class="flex gap-1">
+                        <img src="https://i.imgur.com/uhRCHaU.png" height="28" width="28" alt="">
+                        <img src="https://i.imgur.com/napOxKq.png" height="28" width="28" alt="">
+                        <img src="https://i.imgur.com/CYHLyLm.png" height="28" width="28" alt="">
+                    </div>
+                    <div class="form">
+                        <div>Đăng ký nhận tin khuyến mãi</div>
+                        <div class="promotion">
+                            <input type="text" placeholder="Nhập email của bạn">
+                            <div class="reg-btn">ĐĂNG KÝ</div>
+                        </div>
+                    </div>
+                    <div class="theme-picker">THEME:
+                        <div class="blue" onclick="setThemeColor('#0075f5')"></div>
+                        <div class="orange" onclick="setThemeColor('#f5bd00')"></div>
+                        <div class="green" onclick="setThemeColor('#00f581')"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar" style="display: none;" id="sidebar">
+        <div class="sb-header">
+            <img src="http://localhost:5500/assets/img/logo.svg" alt="Logo">
+            <i class="fa-solid fa-xmark" onclick="closeSidebar()"></i>
+        </div>
+        <hr>
+        <div class="sb-item-list">
+            <div>
+                <i class="text-blue fa-regular fa-rectangle-list"></i>
+                ĐẶT CHỔ CỦA TÔI
+            </div>
+            <div>
+                <i class="text-blue fa-regular fa-circle-question"></i> TRỢ GIÚP
+            </div>
+        </div>
+        <div class="btn-login"><a href="/dang-nhap.html">ĐĂNG NHẬP</a></div>
+    </div>
+
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/pre-loader.js"></script>
+    <script src="/assets/js/render-product.js"></script>
+</body>
+
+</html>

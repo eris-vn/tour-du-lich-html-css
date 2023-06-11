@@ -1,0 +1,16 @@
+.partner {
+    /* background-color: #f7f7f7; */
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.partner>*>.title {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+
+#swiper-partner img {
+    height: 40px;
+}

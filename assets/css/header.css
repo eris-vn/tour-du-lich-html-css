@@ -1,0 +1,44 @@
+.text-blue {
+    color: var(--blue);
+}
+
+.content-center {
+    align-items: center;
+}
+
+.header {
+    padding: 20px 0px;
+    border-bottom: 1px solid #eee;
+}
+
+.header .btn-login {
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: var(--blue);
+    width: fit-content;
+    color: aliceblue;
+    padding: 8px 12px;
+}
+
+.btn-login a {
+    color: aliceblue;
+}
+
+.sub-header {
+    background-color: #f9f9f9;
+    position: relative;
+    padding: 15px 0px;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}

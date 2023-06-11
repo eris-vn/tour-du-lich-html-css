@@ -1,0 +1,125 @@
+.news {
+    margin-bottom: 50px;
+}
+
+.news>*>.title {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+
+.news-container {
+    height: 530px;
+    width: 100%;
+    gap: 18px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 120px);
+}
+
+.news-container .test {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.news-container .item1 {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    position: relative;
+    border: 1px solid #dddfe2;
+}
+
+.news-container .item1>img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-container .item1>.content {
+    padding: 18px 14px;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 28px);
+    /* height: 100px; */
+    background-color: rgb(0 0 0 / 40%);
+}
+
+.news-container .item1>.content>.title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.news-container .item1>.content>.date {
+    color: white;
+}
+
+.news-container .item2 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    grid-column-start: 9;
+    grid-column-end: 13;
+}
+
+.news-container .item3 {
+    width: 100%;
+    height: 100%;
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 2;
+}
+
+.news-container .item4 {
+    width: 100%;
+    height: 100%;
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 3;
+}
+
+.news-container .item5 {
+    width: 100%;
+    height: 100%;
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 4;
+}
+
+
+.news-container img {
+    width: 100%;
+}
+
+.news-container .posts {
+    border-radius: 3px;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    border: 1px solid #dddfe2;
+}
+
+.news-container .posts>img {
+    height: 100%;
+    width: 120px;
+    aspect-ratio: 10/10;
+    object-fit: cover;
+}
+
+.news-container .posts .title {
+    margin-top: 10px;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    margin-bottom: 8px;
+    margin-right: 10px;
+}

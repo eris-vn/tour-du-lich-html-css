@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DU LỊCH VIỆT</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/app.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="loading-screen">
+        <div class="screen-wrapper">
+            <div class="loader"></div>
+            <div>Đang tải, chờ chút nha ...</div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="container flex justify-between">
+            <a href="/"><img src="/assets/img/logo.svg" alt="Logo" /></a>
+            <div class="h-content flex content-center gap-10 is-pc">
+                <div>
+                    <i class="text-blue fa-regular fa-rectangle-list"></i>
+                    ĐẶT CHỔ CỦA TÔI
+                </div>
+                <div>
+                    <i class="text-blue fa-regular fa-circle-question"></i> TRỢ GIÚP
+                </div>
+                <div><a href="/dang-ky.html">ĐĂNG KÝ</a></div>
+                <div class="btn-login"><a href="/dang-nhap.html">ĐĂNG NHẬP</a></div>
+            </div>
+            <div class="is-mobile">
+                <i class="fa-solid fa-bars mobile-bar" onclick="openSidebar()"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="tour-details">
+        <div class="container">
+            <div class="tour-container">
+                <div class="col-1">
+                    <div class="thumb-wrapper">
+                        <div class="title">
+                            Tour du lịch Bali 4 ngày 3 đêm từ TP.HCM - Khởi hành 2023
+                        </div>
+                        <div class="thumbnails">
+                            <img id="main-image"
+                                src="https://media.travel.com.vn/destination/tf_221208042538_041303.jpg" alt="">
+                        </div>
+                        <div class="swiper" id="sub-thumbnails">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://imagescdn.pystravel.vn/uploads/posts/albums/6/a676f37e662186eecd29b0e0f7a064d6.PNG"
+                                        alt>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://imagescdn.pystravel.vn/uploads/posts/albums/6/dadc7c6fcb1f34b8a3f0c356f63244cd.PNG"
+                                        alt>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://imagescdn.pystravel.vn/uploads/posts/albums/6/124696eadae238b158537e8f6cf04dc7.jpg"
+                                        alt>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://imagescdn.pystravel.vn/uploads/posts/albums/6/40bef696f75ca891b6018d91169a38df.jpg"
+                                        alt>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://imagescdn.pystravel.vn/uploads/posts/albums/6/1b6d29cfa10218589c45de91272bba93.jpg"
+                                        alt>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://imagescdn.pystravel.vn/uploads/posts/albums/6/33ee7454a2bb22c9d15fd2ed07dd02dd.jpg"
+                                        alt>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://booking.pystravel.vn/uploads/posts/albums/6/ec1abff94ca16696d2dc49e78a79ca89.jpg"
+                                        alt>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://booking.pystravel.vn/uploads/posts/albums/6/3827ef86d6c4c40de148b9d8482ee279.jpg"
+                                        alt>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://booking.pystravel.vn/uploads/posts/albums/6/e0374a0d5937afcfd735aa5137c3d9be.jpg"
+                                        alt>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://booking.pystravel.vn/uploads/posts/albums/6/88b191b48bd575e9d60ba237f01b2571.jpg"
+                                        alt>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://booking.pystravel.vn/uploads/posts/albums/6/db0c482b05a8e33b4adff14af8ac0f7c.jpg"
+                                        alt>
+                                </div>
+                            </div>
+                            <!-- If we need navigation buttons -->
+                            <div class="banner-btn-prev">
+                                <div>
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </div>
+                            </div>
+                            <div class="banner-btn-next">
+                                <div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumb-wrapper">
+                        <h2>Giới thiệu</h2>
+                        <div>
+                            Đảo Cô Tô - Hòn đảo xinh đẹp nằm ở phía Đông Bắc Tổ quốc thuộc tỉnh Quảng Ninh, một vài năm
+                            trở lại đây có sức đặc biệt với du khách khắp nơi. Với nhiều bãi biển trong xanh cùng với sự
+                            phát triển nhiều loại hình vui chơi giải trí nơi đây phù hợp cả nghỉ dưỡng hay khám phá.
+                        </div>
+                        <table
+                            style="height: 0px; margin-left: auto; margin-right: auto;margin-top: 20px;margin-bottom: 20px;"
+                            border="1" width="100%" cellspacing="0" cellpadding="5">
+                            <tbody>
+                                <tr style="height: 19px;">
+                                    <td style="width: 192.328px; text-align: center; height: 19px;" colspan="3">
+                                        <strong><span style="font-size: 12pt;">GIÁ TOUR TRỌN GÓI</span></strong>
+                                    </td>
+                                </tr>
+                                <tr style="height: 19px;">
+                                    <td style="text-align: center;"><strong>Ngày khởi hành 2023</strong></td>
+                                    <td style="text-align: center;"><strong>Số lượng khách/phòng</strong></td>
+                                    <td style="text-align: center;"><strong>Giá người lớn</strong></td>
+                                </tr>
+                                <tr style="height: 41px;">
+                                    <td rowspan="2">
+                                        <p style="text-align: center;">Thứ 6 hàng tuần</p>
+                                    </td>
+                                    <td style="text-align: center;">2 khách/phòng</td>
+                                    <td style="text-align: center;">3.380.000&nbsp;VNĐ</td>
+                                </tr>
+                                <tr style="height: 39px;">
+                                    <td style="text-align: center;">3 - 4 Khách/phòng</td>
+                                    <td style="text-align: center;">3.180.000&nbsp;VNĐ</td>
+                                </tr>
+                                <tr style="height: 39px;">
+                                    <td style="width: 192.328px; text-align: center; height: 39px;" colspan="3"><span
+                                            style="font-size: 12pt;"><strong>KHUYẾN MÃI ĐẶT TOUR SỚM</strong></span>
+                                    </td>
+                                </tr>
+                                <tr style="height: 39px;">
+                                    <td style="width: 192.328px; text-align: center; height: 39px;"><strong>Đặt trước
+                                            ngày khởi hành</strong></td>
+                                    <td style="width: 192.328px; text-align: center; height: 39px;"><strong>Giảm giá/1
+                                            người</strong></td>
+                                    <td style="width: 192.344px; text-align: center; height: 39px;" rowspan="4">
+                                        <em>Không áp dụng đồng thời các chương trình Khuyễn mãi khác</em>
+                                    </td>
+                                </tr>
+                                <tr style="height: 39px;">
+                                    <td style="width: 192.328px; text-align: center; height: 39px;">60 ngày</td>
+                                    <td style="width: 192.328px; text-align: center; height: 39px;">200.000 VNĐ</td>
+                                </tr>
+                                <tr style="height: 39px;">
+                                    <td style="width: 192.328px; text-align: center; height: 39px;">45 ngày</td>
+                                    <td style="width: 192.328px; text-align: center; height: 39px;">150.000 VNĐ</td>
+                                </tr>
+                                <tr style="height: 39px;">
+                                    <td style="width: 192.328px; text-align: center; height: 39px;">30 ngày</td>
+                                    <td style="width: 192.328px; text-align: center; height: 39px;">100.000 VNĐ</td>
+                                </tr>
+                                <tr style="height: 39px;">
+                                    <td style="width: 192.328px; text-align: center; height: 39px;" colspan="3"><span
+                                            style="color: #ff0000;">Ngoài ra&nbsp;PYS Travel&nbsp;<strong>Tặng
+                                                áo&nbsp;Cờ đỏ sao vàng&nbsp;</strong>check in cực chất cho tất cả khách
+                                            hàng</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="mb-2">
+                            Không phải ngẫu nhiên mà Cô Tô được nhiều người ưu ái với tên gọi ‘thiên đường du lịch biển
+                            miền Bắc. Đây là điểm đến dành cho bất cứ ai mong muốn trở về với thiên nhiên hoang sơ, bình
+                            yên, để tâm trí được vỗ về, quên hết mọi âu lo thường nhật.
+                        </div>
+
+                        <h2>
+                            Lịch trình
+                        </h2>
+                        <div>
+                            <bold>> NGÀY 1: HÀ NỘI - CẢNG CÁI RỒNG - ĐẢO CÔ TÔ (Ăn trưa. tối)</bold> <br><br>
+                            Sáng: Quý khách tập trung tại điểm hẹn. Xe và Hướng Dẫn Viên (HDV) PYS Travel cùng Quý khách
+                            xuất phát đi Vân Đồn. Quý khách dừng xe ăn sáng tự túc tại nhà hàng tại Sao Đỏ, Hải Dương
+                            (chi phí tự túc) <br><br>
+
+                            Trưa: Quý khách tới cảng Ao Tiên. <br><br>
+
+                            Chiều: Quý khách lên tàu cao tốc thăm đảo Cô Tô. Trên hành trình Quý khách đi qua vịnh Bái
+                            Tử Long và Cô Tô. (Giờ tàu có thể thay đổi phụ thuộc vào điều kiện thời tiết và cảng vụ).
+                            <br><br>
+
+                            Sau khi tới đảo Cô Tô, Quý khách nhận phòng nghỉ trên đảo ngay tại trung tâm thị trấn Cô Tô.
+                            <br> <br>
+
+                            > NGÀY 2: BÃI ĐÁ MÓNG RỒNG - BÃI VÀN CHẢY - BÃI HỒNG VÀN (Ăn sáng, trưa, tối) <br><br>
+
+                            Sáng: Quý khách dùng bữa sáng và cùng chuẩn bị cho một ngày khám phá hoạt động thú vị trên
+                            đảo. Quý khách sẽ thăm bãi đá Móng Rồng, cầu Mỵ, mũi Ông Minh, nơi có cảnh quan kỳ vĩ nhất
+                            đảo Cô Tô.
+                            Quý khách tự do tắm biển tại bãi biển Vàn Chảy. <br><br>
+
+
+                            Sau chuyến tham quan; Quý khách dùng cơm trưa tại nhà hàng. <br><br>
+
+                            Chiều: Quý khách sẽ đến với bãi biển Hồng Vàn – bãi biển đẹp nhất miền Bắc với biển xanh cát
+                            vàng óng, xa xa là đảo Cô Tô con, đảo Thanh Lân, Hòn Dê. <br><br>
+
+                            Tối: Bữa tối ngày thứ 02, Quý khách có cơ hội tham gia tiệc nướng hải sản - một bữa tối sẽ
+                            khiến cho nhiều bạn không thể quên. <br><br>
+
+                            > NGÀY 3: ĐẢO CÔ TÔ - BẾN CÁI RỒNG - HÀ NỘI (Ăn sáng, trưa)<br><br>
+
+                            Sáng: Quý khách ăn sáng, tự do dạo chơi thị trấn Cô Tô, mua hải sản Cô Tô về làm quà với các
+                            món ăn như mực một nắng, tu hài, sò, sao biển... <br><br>
+
+                            Sau đó, Quý khách cùng HDV đi tham quan đảo Cô Tô Con - bãi cát trắng được nối tiếp bởi làn
+                            nước phẳng như mặt gương và trong như vắt - Cô tô con được mệnh danh là một trong những bãi
+                            biển đẹp nhất Đông Nam Á chi phí tự túc.<br><br>
+
+                            Trưa: Quý khách dùng bữa trưa tại đảo Cô Tô lớn, làm thủ tục trả phòng, và kiểm tra lại đồ
+                            đạc trước khi xuất phát trở về. Lên tàu trở về cảng Vân Đồn và xe xuất phát trở về Hà Nội.
+                            <br><br>
+
+                            Tối: Xe đưa Quý khách về tới Hà Nội, HDV PYS Travel chào tạm biệt Quý khách, chuyến đi kết
+                            thúc tốt đẹp, và hi vọng sẽ có dịp gặp lại Quý khách trong các chương trình sau. <br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div>
+                        Giá tour trọn gói
+                    </div>
+                    <div class="price">
+                        9,990,000
+                    </div>
+                    <hr>
+                    <div class="tour-item-list">
+                        <div class="item-tour">
+                            <i class="fa-solid fa-house"></i> Khởi hành: <span>Hà Nội</span>
+                        </div>
+                        <div class="item-tour">
+                            <i class="fa-solid fa-map"></i> Điểm đến: <span>Cô Tô</span>
+                        </div>
+                        <div class="item-tour">
+                            <i class="fa-solid fa-clock"></i> Lịch trình: <span>3 ngày 2 đêm</span>
+                        </div>
+                        <div class="item-tour">
+                            <i class="fa-solid fa-calendar-days"></i> Khởi hành: <span>Thứ 6 hàng tuần</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="order-btn">
+                        ĐẶT TOUR NGAY
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container ">
+            <div class="f-content">
+                <div>
+                    <div class="title">
+                        VỀ CHÚNG TÔI
+                    </div>
+                    <div class="content">
+                        Chúng tôi là một doanh nghiệp đặt tour du lịch uy tín với hơn 10 năm kinh nghiệm, mang đến những
+                        hành trình đáng nhớ và chất lượng hàng đầu.
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i> 0909886688
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-house"></i> Số 5, Lô 1C, Trung Yên 11C, Hà Nội
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-envelope"></i> info@domain.com
+                    </div>
+                </div>
+                <div>
+                    <div class="title">
+                        BẢN ĐỒ
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3127470222767!2d106.68035468531501!3d10.787341431579426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4cad8d5321%3A0xbf890179e4784517!2sTRAVELOKA%20VIETNAM!5e0!3m2!1svi!2s!4v1686242124443!5m2!1svi!2s"
+                        width="100%" height="130" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <div class="title">
+                        KẾT NỐI VỚI CHÚNG TÔI
+                    </div>
+                    <div class="flex gap-1">
+                        <img src="https://i.imgur.com/uhRCHaU.png" height="28" width="28" alt="">
+                        <img src="https://i.imgur.com/napOxKq.png" height="28" width="28" alt="">
+                        <img src="https://i.imgur.com/CYHLyLm.png" height="28" width="28" alt="">
+                    </div>
+                    <div class="form">
+                        <div>Đăng ký nhận tin khuyến mãi</div>
+                        <div class="promotion">
+                            <input type="text" placeholder="Nhập email của bạn">
+                            <div class="reg-btn">ĐĂNG KÝ</div>
+                        </div>
+                    </div>
+                    <div class="theme-picker">THEME:
+                        <div class="blue" onclick="setThemeColor('#0075f5')"></div>
+                        <div class="orange" onclick="setThemeColor('#f5bd00')"></div>
+                        <div class="green" onclick="setThemeColor('#00f581')"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar" style="display: none;" id="sidebar">
+        <div class="sb-header">
+            <img src="http://localhost:5500/assets/img/logo.svg" alt="Logo">
+            <i class="fa-solid fa-xmark" onclick="closeSidebar()"></i>
+        </div>
+        <hr>
+        <div class="sb-item-list">
+            <div>
+                <i class="text-blue fa-regular fa-rectangle-list"></i>
+                ĐẶT CHỔ CỦA TÔI
+            </div>
+            <div>
+                <i class="text-blue fa-regular fa-circle-question"></i> TRỢ GIÚP
+            </div>
+        </div>
+        <div class="btn-login"><a href="/dang-nhap.html">ĐĂNG NHẬP</a></div>
+    </div>
+
+    <script src="/assets/js/pre-loader.js"></script>
+    <script src="/assets/js/details.js"></script>
+</body>
+
+</html>
